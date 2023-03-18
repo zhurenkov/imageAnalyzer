@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True)
 
 def load_image():
     """Создание формы для загрузки изображения"""
@@ -19,15 +19,7 @@ def load_image():
         return Image.open(io.BytesIO(image_data))
     else:
         return None
-
 # Выводим заголовок страницы средствами Streamlit
 st.title('Классификация изображений')
 # Вызываем функцию создания формы загрузки изображения
 img = load_image()
-
-result = st.button('Распознать изображение')
-if result:
-    x = preprocess_image(img)
-    preds = model.predict(x)
-    st.write('**Результаты распознавания:**')
-    print_predictions(preds)

@@ -4,7 +4,7 @@
 
 - [Streamlit](https://streamlit.io/).
 - [TensorFlow](https://www.tensorflow.org/).
-- [PyEnv][https://github.com/pyenv/pyenv/wiki/common-build-problems#prerequisites] --- для локальной работы.
+- [PyEnv](https://github.com/pyenv/pyenv/wiki/common-build-problems#prerequisites) --- для локальной работы.
 
 Для распознавания изображений используется нейронная сеть [EfficientNetB0](https://keras.io/api/applications/efficientnet/#efficientnetb0-function). Подробности о модели в статье:
 
